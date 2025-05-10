@@ -773,6 +773,13 @@
       }
     }
   }
+  .hover\:bg-\[\#ffc9c9\] {
+    &:hover {
+      @media (hover: hover) {
+        background-color: #ffc9c9;
+      }
+    }
+  }
   .hover\:bg-blue-700 {
     &:hover {
       @media (hover: hover) {
