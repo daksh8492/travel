@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discover Hidden Wonders</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class=" font-sans text-[#a70000]">
+    <!-- Header / Navbar -->
+    <header
+      class="bg-[#ff5252] shadow p-4 flex items-center justify-between sticky top-0 z-50"
+    >
+      <!-- Logo -->
+      <div class="text-lg font-bold">Logo</div>
+      <!-- Desktop Menu -->
+      <nav class="hidden md:flex text-white space-x-6">
+        <a href="#" class="hover:text-[#a70000]">Home</a>
+        <a href="#" class="hover:text-[#a70000]">About</a>
+        <a href="#" class="hover:text-[#a70000]">Services</a>
+        <a href="#" class="hover:text-[#a70000]">Contact</a>
+      </nav>
+      <!-- Desktop Buttons -->
+      <div class="hidden md:flex space-x-4 items-center">
+        <button class="bg-[#ffbaba] px-4 py-2 rounded-2xl">Sign in</button>
+        <button class="bg-[#ffbaba] px-4 py-2 rounded-2xl">Get Started</button>
+      </div>
+      <!-- Mobile menu button -->
+      <div class="md:hidden">
+        <button id="menuButton" class="focus:outline-none">
+          <svg
+            class="w-6 h-6 text-[#ffbaba]"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile menu -->
+    <div
+      id="mobileMenu"
+      class="hidden md:hidden bg-[#ff5252] text-white shadow-lg absolute w-full top-16 z-40 transition-transform duration-300 transform"
+    >
+      <div class="px-4 py-2 space-y-4">
+        <a href="#" class="block hover:text-[#ff0000]">Home</a>
+        <a href="#" class="block hover:text-[#ff0000]">About</a>
+        <a href="#" class="block hover:text-[#ff0000]">Services</a>
+        <a href="#" class="block hover:text-[#ff0000]">Contact</a>
+        <div class="pt-2 border-t border-gray-200">
+          <button
+            class="w-full mb-2 bg-[#ffbaba] text-[#a70000] px-4 py-2 rounded"
+          >
+            Sign in
+          </button>
+          <button class="w-full bg-[#ffbaba] text-[#a70000] px-4 py-2 rounded">
+            Get Started
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Section -->
+    <!-- <section class="max-w-7xl mx-auto px-4 py-16 md:py-24">
+      <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div>
+          <h1 class="text-4xl md:text-5xl font-bold mb-4">
+            Discover the World's Hidden Wonders
+          </h1>
+          <p class="mb-6">
+            Find the most incredible moments and hidden gems that will blow your
+            mind.
+          </p>
+          <button class="bg-[#ff0000] text-white px-6 py-3 rounded">
+            Explore
+          </button>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <img
+            src="3.jpg"
+            alt="Image 1"
+            class="h-40 w-full object-cover rounded"
+          />
+          <img
+            src="3.jpg"
+            alt="Image 2"
+            class="h-40 w-full object-cover rounded"
+          />
+          <img
+            src="3.jpg"
+            alt="Image 3"
+            class="h-40 w-full object-cover rounded col-span-2"
+          />
+        </div>
+      </div>
+    </section> -->
+
+    <section
+  class="relative bg-cover bg-center bg-no-repeat text-white"
+  style="background-image: url(1.jpg);"
+>
+  <div class="absolute inset-0 bg-black/60"></div>
+
+  <div class="relative max-w-7xl mx-auto px-4 py-16 md:py-24">
+    <div class="grid md:grid-cols-2 gap-8 items-center">
+      <!-- Text Content -->
+      <div>
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">
+          Discover the World's Hidden Wonders
+        </h1>
+        <p class="mb-6">
+          Find the most incredible moments and hidden gems that will blow your mind.
+        </p>
+        <button class="bg-[#ff0000] hover:bg-red-700 transition text-white px-6 py-3 rounded">
+          Explore
+        </button>
+      </div>
+
+      <!-- Image Grid -->
+      <div class="grid grid-cols-2 gap-4">
+        <img
+          src="3.jpg"
+          alt="Image 1"
+          class="h-40 w-full object-cover rounded"
+        />
+        <img
+          src="3.jpg"
+          alt="Image 2"
+          class="h-40 w-full object-cover rounded"
+        />
+        <img
+          src="3.jpg"
+          alt="Image 3"
+          class="h-40 w-full object-cover rounded col-span-2"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Top Destinations -->
+    <!-- <section class="max-w-7xl mx-auto px-4 py-16">
+      <h2 class="text-3xl font-bold mb-8">Top Destinations</h2>
+      <div class="grid md:grid-cols-4 gap-4 mb-12">
+         Destination cards 
+        <div
+          class="h-60 rounded cursor-pointer hover:scale-105 transition-transform"
+        >
+          <img class="h-auto max-w-full" src="3.jpg" alt="IMAGE" />
+          <p>Destination Name</p>
+        </div>
+        <div
+          class="h-60 rounded cursor-pointer hover:scale-105 transition-transform"
+        >
+          <img class="h-auto max-w-full" src="3.jpg" alt="IMAGE" />
+          <p>Destination Name</p>
+        </div>
+        <div
+          class="h-60 rounded cursor-pointer hover:scale-105 transition-transform"
+        >
+          <img class="h-auto max-w-full" src="3.jpg" alt="IMAGE" />
+          <p>Destination Name</p>
+        </div>
+        <div
+          class="h-60 rounded cursor-pointer hover:scale-105 transition-transform"
+        >
+          <img class="h-auto max-w-full" src="3.jpg" alt="IMAGE" />
+          <p>Destination Name</p>
+        </div>
+      </div>
+       More destinations button 
+      <button class="bg-[#ff0000] text-white px-4 py-2 rounded-xl">
+        Explore all destinations
+      </button>
+    </section> -->
+
+    <section class="max-w-7xl mx-auto px-4 py-16">
+        <h2 class="text-3xl font-bold mb-8 text-center">Top Destinations</h2>
+      
+        <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-4 mb-12">
+          <!-- Destination Card Template -->
+          <!-- <div class="rounded-lg overflow-hidden shadow hover:scale-105 transition-transform cursor-pointer">
+            <img
+              src="{IMAGE_URL}"
+              alt="{DESTINATION_NAME}"
+              class="w-full h-40 object-cover"
+            />
+            <p class="p-2 text-center text-gray-700 font-medium">{DESTINATION_NAME}</p>
+          </div> -->
+          <!-- Duplicate above block with actual data -->
+          <div class="bg-white rounded-lg overflow-hidden shadow hover:scale-105 transition-transform cursor-pointer">
+            <img
+              src="3.jpg"
+              alt="Paris"
+              class="w-full h-40 object-cover"
+            />
+            <p class="p-2 text-center text-gray-700 font-medium">Paris</p>
+          </div>
+      
+          <div class="bg-white rounded-lg overflow-hidden shadow hover:scale-105 transition-transform cursor-pointer">
+            <img
+              src="3.jpg"
+              alt="Tokyo"
+              class="w-full h-40 object-cover"
+            />
+            <p class="p-2 text-center text-gray-700 font-medium">Tokyo</p>
+          </div>
+      
+          <div class="bg-white rounded-lg overflow-hidden shadow hover:scale-105 transition-transform cursor-pointer">
+            <img
+              src="3.jpg"
+              alt="New York"
+              class="w-full h-40 object-cover"
+            />
+            <p class="p-2 text-center text-gray-700 font-medium">New York</p>
+          </div>
+      
+          <div class="bg-white rounded-lg overflow-hidden shadow hover:scale-105 transition-transform cursor-pointer">
+            <img
+              src="3.jpg"
+              alt="Barcelona"
+              class="w-full h-40 object-cover"
+            />
+            <p class="p-2 text-center text-gray-700 font-medium">Barcelona</p>
+          </div>
+        </div>
+      
+        <!-- Explore More Button -->
+        <div class="text-center">
+          <button class="bg-[#ff0000] text-white px-6 py-3 rounded-xl font-semibold transition">
+            Explore all destinations
+          </button>
+        </div>
+      </section>
+      
+
+    <!-- Latest Stories
+    <section class="max-w-7xl mx-auto px-4 py-16">
+      <h2 class="text-2xl font-bold mb-8">Latest Stories</h2>
+      <div class="space-y-8 mb-12">
+        <div
+          class="bg-gray-100 p-4 rounded flex space-x-4 cursor-pointer hover:bg-gray-200"
+        >
+          <div class="w-24 h-24 bg-gray-300 rounded">Image</div>
+          <div>
+            <h3 class="font-semibold mb-2">
+              Los Angeles food & drink guide: 10 things to try in LA
+            </h3>
+            <p class="text-sm text-gray-600">Aug 21, 2024 | 4 min read</p>
+          </div>
+        </div>
+        <div
+          class="bg-gray-100 p-4 rounded flex space-x-4 cursor-pointer hover:bg-gray-200"
+        >
+          <div class="w-24 h-24 bg-gray-300 rounded">Image</div>
+          <div>
+            <h3 class="font-semibold mb-2">
+              Los Angeles food & drink guide: 10 things to try in LA
+            </h3>
+            <p class="text-sm text-gray-600">Aug 21, 2024 | 4 min read</p>
+          </div>
+        </div>
+        <div
+          class="bg-gray-100 p-4 rounded flex space-x-4 cursor-pointer hover:bg-gray-200"
+        >
+          <div class="w-24 h-24 bg-gray-300 rounded">Image</div>
+          <div>
+            <h3 class="font-semibold mb-2">
+              Los Angeles food & drink guide: 10 things to try in LA
+            </h3>
+            <p class="text-sm text-gray-600">Aug 21, 2024 | 4 min read</p>
+          </div>
+        </div>
+        <div
+          class="bg-gray-100 p-4 rounded flex space-x-4 cursor-pointer hover:bg-gray-200"
+        >
+          <div class="w-24 h-24 bg-gray-300 rounded">Image</div>
+          <div>
+            <h3 class="font-semibold mb-2">
+              15 South London Markets You’ll Love! Best Markets in South London
+            </h3>
+            <p class="text-sm text-gray-600">Jul 15, 2024 | 5 min read</p>
+          </div>
+        </div>
+      </div>
+
+      Browse more articles 
+      <button class="border border-gray-300 px-4 py-2 rounded">
+        Read more articles
+      </button>
+    </section> -->
+
+    <section class="max-w-7xl mx-auto px-6 py-16">
+      <!-- Section Title -->
+      <h2 class="text-3xl font-bold mb-12 text-center">Latest Stories</h2>
+
+      <!-- Stories Container -->
+      <div class="flex flex-wrap -mx-4">
+        <!-- Story Card -->
+        <article class="w-full md:w-1/2 px-4 mb-8">
+          <div
+            class="bg-white rounded-xl shadow-md hover:shadow-lg transition duration-300 p-5 flex gap-4 h-full cursor-pointer"
+          >
+            <img
+              src="3.jpg"
+              alt="Los Angeles food guide"
+              class="w-32 h-32 object-cover rounded-lg"
+            />
+            <div class="flex flex-col">
+              <h3
+                class="text-lg font-semibold text-gray-800 hover:text-blue-600"
+              >
+                Los Angeles food & drink guide: 10 things to try in LA
+              </h3>
+              <p class="text-sm text-gray-500 mt-auto">
+                Aug 21, 2024 • 4 min read
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="w-full md:w-1/2 px-4 mb-8">
+          <div
+            class="bg-white rounded-xl shadow-md hover:shadow-lg transition duration-300 p-5 flex gap-4 h-full cursor-pointer"
+          >
+            <img
+              src="3.jpg"
+              alt="Los Angeles food guide"
+              class="w-32 h-32 object-cover rounded-lg"
+            />
+            <div class="flex flex-col">
+              <h3
+                class="text-lg font-semibold text-gray-800 hover:text-blue-600"
+              >
+                Los Angeles food & drink guide: 10 things to try in LA
+              </h3>
+              <p class="text-sm text-gray-500 mt-auto">
+                Aug 21, 2024 • 4 min read
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="w-full md:w-1/2 px-4 mb-8">
+          <div
+            class="bg-white rounded-xl shadow-md hover:shadow-lg transition duration-300 p-5 flex gap-4 h-full cursor-pointer"
+          >
+            <img
+              src="3.jpg"
+              alt="Los Angeles food guide"
+              class="w-32 h-32 object-cover rounded-lg"
+            />
+            <div class="flex flex-col">
+              <h3
+                class="text-lg font-semibold text-gray-800 hover:text-blue-600"
+              >
+                Los Angeles food & drink guide: 10 things to try in LA
+              </h3>
+              <p class="text-sm text-gray-500 mt-auto">
+                Aug 21, 2024 • 4 min read
+              </p>
+            </div>
+          </div>
+        </article>
+
+        <article class="w-full md:w-1/2 px-4 mb-8">
+          <div
+            class="bg-white rounded-xl shadow-md hover:shadow-lg transition duration-300 p-5 flex gap-4 h-full cursor-pointer"
+          >
+            <img
+              src="3.jpg"
+              alt="Los Angeles food guide"
+              class="w-32 h-32 object-cover rounded-lg"
+            />
+            <div class="flex flex-col">
+              <h3
+                class="text-lg font-semibold text-gray-800 hover:text-blue-600"
+              >
+                Los Angeles food & drink guide: 10 things to try in LA
+              </h3>
+              <p class="text-sm text-gray-500 mt-auto">
+                Aug 21, 2024 • 4 min read
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- Read More Button -->
+      <div class="text-center mt-12">
+        <button class="px-6 py-3 bg-[#ff0000] text-white rounded-xl transition">
+          Read more articles
+        </button>
+      </div>
+    </section>
+
+    <!-- Trekker's Highlights
+    <section class="max-w-7xl mx-auto px-4 py-16">
+      <h2 class="text-2xl font-bold mb-8">Trekker's Highlights</h2>
+      <div class="space-y-8">
+        <div
+          class="flex items-center space-x-4 bg-gray-100 p-4 rounded cursor-pointer hover:bg-gray-200"
+        >
+          <div class="w-16 h-16 bg-gray-300 rounded">Image</div>
+          <div>
+            <h3 class="font-semibold mb-2">Maria Angelica</h3>
+            <p class="text-gray-600 text-sm">Málaga, Spain</p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Footer -->
+    <footer class="bg-[#ff5252] text-gray-100 py-8 mt-16">
+      <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-4 gap-8 text-sm">
+        <!-- Logo and description -->
+        <div>
+          <h4 class="text-lg text-[#a70000] font-bold mb-2">Logo</h4>
+          <p class="mb-4">Get Your Travel Inspiration Straight to Your Inbox</p>
+          <form class="flex">
+            <input
+              type="email"
+              placeholder="Your email"
+              class="w-full px-3 py-2 rounded-l bg-red-700 border focus:outline-none"
+            />
+            <button class="bg-red-700 px-4 py-2 rounded-r">Subscribe</button>
+          </form>
+        </div>
+        <!-- Placeholder links -->
+        <div>
+          <h5 class="font-semibold mb-2">About</h5>
+          <ul>
+            <li><a href="#" class="block hover:underline">About us</a></li>
+            <li><a href="#" class="block hover:underline">Contact us</a></li>
+            <li>
+              <a href="#" class="block hover:underline">Terms & Conditions</a>
+            </li>
+            <li>
+              <a href="#" class="block hover:underline">Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-semibold mb-2">Categories</h5>
+          <ul>
+            <li><a href="#" class="block hover:underline">Travel</a></li>
+            <li><a href="#" class="block hover:underline">Adventure</a></li>
+            <li><a href="#" class="block hover:underline">Lifestyle</a></li>
+            <li><a href="#" class="block hover:underline">Food</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-semibold mb-2">Follow us</h5>
+          <div class="flex space-x-4">
+            <!-- Icons or placeholders -->
+            <div class="w-8 h-8 bg-gray-700 rounded-full"></div>
+            <div class="w-8 h-8 bg-gray-700 rounded-full"></div>
+            <div class="w-8 h-8 bg-gray-700 rounded-full"></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+      // Toggle mobile menu
+      const menuButton = document.getElementById("menuButton");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      menuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
